@@ -1,0 +1,232 @@
+html{
+	overflow: auto;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;/*可能会出问题*/
+	font-family: "Open Sans", sans-serif;
+
+}
+.main-left{
+	/*width: 15%;*/
+	width: 250px;
+	height: 100%;
+	/*background: blue;
+	border: 5px solid blue;*/
+	display: inline-block;
+	position: absolute;
+	left: 35px;
+	/*display: none;*/
+
+}
+.menu{
+	width: 250px;
+	height: 300px;
+	/*background: grey;*/
+	position: absolute;
+	top: 15%;
+	left: 80px;
+}
+.button{
+	position: relative;
+	background: #1b1b1b;
+	color: white;
+	font-size: 20px;
+	padding: 8px 20px;
+	width: 50%;
+	line-height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: width .2s;
+}
+.button.expand{
+	width: 80%;
+}
+.point{
+	list-style: none;
+	position: absolute;
+	display: block;
+	background: #1b1b1b;
+	top: 65px;
+	width: 78%;
+	text-align: center;
+	border-radius: 5px;
+	display: none;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+
+}
+.point:before{
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	background: #1b1b1b;
+	top: -10px;
+	right: 15px;
+	transform: rotate(45deg);
+	z-index: -1;
+}
+.point li{
+	line-height: 35px;
+	padding: 8px 20px;
+	border-bottom: 1px solid rgba(255, 255, 255,.5);
+	cursor: pointer;
+}
+.point li:last-child{
+	border-bottom: none;
+}
+.point li:hover{
+	box-shadow: inset 0 0 5px #33ffff,
+				inset 0 0 5px #66ffff;
+}
+.point li:hover:first-child{
+	border-radius: 5px 5px 0 0;
+}
+.point li:hover:last-child{
+	border-radius: 0 0 5px 5px;
+}
+.point li a{
+	color: white;
+	text-decoration: none; 
+}
+.point li a:hover{
+	color: cyan;
+}
+.main-right{
+	/*width: 80%;*/
+	width: 1220px;
+	height: 800px;
+	/*background: green;*/
+	/*border: 5px solid green;*/
+	display: inline-block;
+	/*float: right;*/
+	position: relative;
+	margin-left: 300px;
+
+}
+.back{
+	width: 70%;
+	height: 70%;
+	background: rgba(225,225,225,0.8);
+	border-radius: 10px;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	/*border: 3px solid red;*/
+}
+.profile-box{
+	width: 70%;
+	height: 70%;
+	background: rgba(225,225,225,0.8);
+	border-radius: 10px;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	/*border: 3px solid red;*/
+}
+.short{
+	height: 40%;
+	/*border: 3px solid red;*/
+	margin-top: 20px;
+}
+
+.Contact{
+	/*border: 3px solid red;*/
+	font-size: 22px;
+	padding: 0px 20px;
+}
+.image{
+	width: 220px;
+	height: 220px;
+	padding: 20px,20px;
+	/*background: yellow;*/
+	/*float: right;*/
+	/*border: 5px solid yellow;*/
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.selfie{
+	border-radius: 20%;
+}
+.profile-info{
+	width: 85%;
+	height: 550px;
+	padding: 10px 10px;
+	/*background: brown;*/
+	/*border: 5px solid brown;*/
+	margin-left: 30px;
+	margin-right: 20px;
+
+}
+.profile-long{
+	width: 100%;
+	height: 200px;
+	/*padding: 10px,30px,10px;*/
+	/*background: purple;*/
+	/*border: 5px solid purple;*/
+	/*position: absolute;
+	bottom: 10%;
+	margin-right: 10px;*/
+	margin-top: 20px;
+}
+.footer{
+	width: 30%;
+	align-content: center;
+	background: rgba(225,225,225,9.0);
+	max-height: 50px;
+	/*border: 2px solid red;*/
+	border-radius: 20px;
+	text-align: center;
+	font-size: 20px;
+	margin: 0 auto;
+}
+.Caldr{
+	border-radius: 10px;
+	width: 150%;
+	height: 100%;
+}
+.click-zone{
+	width: 70%;
+	height: 10%;
+	/*border: 2px solid red;*/
+	text-align: center;
+	margin: 0 auto;
+}
+.btns-f{
+	width:70px;
+	height:50%;
+	/*border: 2px solid green;*/
+	background: rgba(225,225,225,9.0);
+	border-radius: 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+.btns-b{
+	width:70px;
+	height:50%;
+	/*border: 2px solid green;*/
+	background: rgba(225,225,225,9.0);
+	border-radius: 10px;
+	display: inline-block;
+	cursor: pointer;
+}
+.click-word{
+	/*background: rgba(225,225,225,9.0);*/
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.group-icon{
+	/*border: 3px solid red;*/
+	
+	margin: 30px auto;
+	text-align: center;
+}
+.project-icon{
+	border-radius: 30px;
+}
